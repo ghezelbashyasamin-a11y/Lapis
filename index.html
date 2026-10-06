@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Lapis — Jewelry cut from the night sky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#top" class="logo">LAP<i>I</i>S</a>
+  <div class="links"><a href="#collections">Collections</a><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#promise">Promise</a></div>
+  <button class="cart" aria-label="Open cart">Bag <b id="count">0</b></button>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="specks" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="tag">LAPIS LAZULI JEWELRY</p>
+    <h1><span>Wear the</span><span>night sky</span></h1>
+    <p class="sub">Bracelets, necklaces and rings set with deep-blue lapis, each stone flecked with real golden pyrite.</p>
+    <a href="#shop" class="btn">Shop the collection</a>
+    <a href="#story" class="btn ghost">Our story</a>
+  </div>
+  <div class="scroll"></div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>Genuine lapis lazuli<em>✦</em>Hand-set in sterling silver<em>✦</em>Free shipping over $80<em>✦</em>30-day returns<em>✦</em>Genuine lapis lazuli<em>✦</em>Hand-set in sterling silver<em>✦</em>Free shipping over $80<em>✦</em>30-day returns<em>✦</em></span>
+  <span>Genuine lapis lazuli<em>✦</em>Hand-set in sterling silver<em>✦</em>Free shipping over $80<em>✦</em>30-day returns<em>✦</em>Genuine lapis lazuli<em>✦</em>Hand-set in sterling silver<em>✦</em>Free shipping over $80<em>✦</em>30-day returns<em>✦</em></span>
+</div></div>
+
+<section id="collections">
+  <h2 class="rv">Shop by piece</h2>
+  <p class="lead rv">Four ways to carry the stone. Tap one to filter the shop.</p>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="shop" id="shop">
+  <h2 class="rv">Bestsellers</h2>
+  <p class="lead rv">Hover a piece to see it worn. Tap the button to add it to your bag.</p>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section id="story">
+  <div class="story">
+    <div class="art rv" id="storyArt"></div>
+    <div class="rv">
+      <h2>Stone of kings, made for every day</h2>
+      <p>For over six thousand years lapis has been carried from the mountains of Afghanistan to pharaohs, painters and poets. We cut it into pieces you can wear from morning coffee to midnight.</p>
+      <p>Every stone is chosen by hand for its depth of blue and its scatter of golden pyrite, so no two pieces look alike.</p>
+      <div class="facts">
+        <div><b>6,000+</b><span>years of history</span></div>
+        <div><b>925</b><span>sterling silver</span></div>
+        <div><b>1 of 1</b><span>every stone unique</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="promise" style="padding-top:0">
+  <h2 class="rv">Our promise</h2>
+  <div class="promises">
+    <div class="promise rv"><span class="ic">✦</span><h3>Genuine stone</h3><p>Natural lapis lazuli only. Every order ships with a certificate of authenticity.</p></div>
+    <div class="promise rv"><span class="ic">◈</span><h3>Gift-ready</h3><p>Each piece arrives in a midnight-blue box with a hand-written note if you ask.</p></div>
+    <div class="promise rv"><span class="ic">❂</span><h3>Easy returns</h3><p>Not the right blue? Send it back within 30 days for a full refund.</p></div>
+  </div>
+</section>
+
+<section class="news">
+  <h2 class="rv">Get 10% off your first piece</h2>
+  <p class="rv">Join the list for new arrivals and early access to limited drops.</p>
+  <form class="field rv" id="news" onsubmit="event.preventDefault();toast('Welcome to Lapis. Check your inbox for your code.');this.reset()">
+    <input type="email" required placeholder="Your email address" aria-label="Email address">
+    <button class="btn" type="submit">Join</button>
+  </form>
+</section>
+
+<footer>
+  <span class="logo" style="font-size:1.4rem">LAP<i>I</i>S</span>
+  <span>© 2026 Lapis Jewelry. All rights reserved.</span>
+  <span><a href="#">Instagram</a> &nbsp; <a href="#">Pinterest</a> &nbsp; <a href="#">Contact</a></span>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
